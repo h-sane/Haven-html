@@ -1,5 +1,6 @@
 # Haven-html
 Haven: Connecting You with NGOs for a  Sustainable Tomorrow.
+![Screenshot 2025-02-20 121155](https://github.com/user-attachments/assets/f5b8eb59-5c3a-4227-89e6-d5fd40b5bd7f)
 
 # About the HAVEN Project
 
@@ -46,10 +47,18 @@ Working on HAVEN taught us the importance of collaboration—not just among team
 
 Looking ahead, our roadmap for HAVEN includes:
 - **Data Integration:** Connecting the platform to live APIs and databases for real-time updates on NGO projects and community issues.
-- **Enhanced User Features:** Implementing user authentication, personalized dashboards, and more interactive elements to further engage our community.
+- **Enhanced User Features:** Implementing user authentication, personalized dashboards, and more interactive elements to engage our community further.
 - **Mobile App Development:** Expanding HAVEN’s reach by developing a dedicated mobile application.
 - **Wider NGO Partnerships:** Partnering with more environmental organizations to broaden the impact and reach of the platform.
 - **Continuous Improvement:** Leveraging user feedback to refine features and expand the platform's capabilities, ensuring HAVEN remains a vital resource for environmental change.
 
 Together, we are building HAVEN to not only connect people but to drive tangible, positive environmental impact.
 
+## Snapshots of the Website
+![Screenshot 2025-02-20 125518](https://github.com/user-attachments/assets/c755ee63-bfb7-4829-aca5-cf6ec033570d)
+![Screenshot 2025-02-20 125537](https://github.com/user-attachments/assets/abea2a08-6256-498b-950d-5e4a981eb6e2)
+![Screenshot 2025-02-20 125603](https://github.com/user-attachments/assets/7c54adda-b042-44ea-94ea-a8ebfcf95291)
+![Screenshot 2025-02-20 125710](https://github.com/user-attachments/assets/adfa304a-57c7-43d9-a15a-b45f3008b4e5)
+![Screenshot 2025-02-20 125742](https://github.com/user-attachments/assets/e150a761-737b-4658-bdac-7718a92f4579)
+![Screenshot 2025-02-20 125803](https://github.com/user-attachments/assets/2a18b2b3-6ba6-448c-b5d1-936469a8a001)
+![Screenshot 2025-02-20 125851](https://github.com/user-attachments/assets/e6231cf1-4c58-4d73-a8e3-327ada8936ca)
