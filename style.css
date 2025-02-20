@@ -1,0 +1,114 @@
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  /* Navbar */
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
+  .nav-link {
+    font-size: 1rem;
+  }
+  
+  /* Standard Hero Section Styles */
+  .hero-section,
+  .donation-hero,
+  .support-hero,
+  .profile-cover {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 100px 0;
+    color: #fff;
+  }
+  
+  /* Standard Overlay for Hero Sections */
+  .hero-section::before,
+  .donation-hero::before,
+  .support-hero::before,
+  .profile-cover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.65); /* Consistent overlay opacity */
+    z-index: 0;
+  }
+  
+  /* Ensure hero content sits above the overlay */
+  .hero-section .container,
+  .donation-hero .container,
+  .support-hero .container,
+  .profile-cover .container {
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Standard Text Styling for Hero Sections */
+  .hero-section h1,
+  .donation-hero h1,
+  .support-hero h1,
+  .profile-cover h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    margin-bottom: 20px;
+  }
+  .hero-section p.lead,
+  .donation-hero p.lead,
+  .support-hero p.lead,
+  .profile-cover p.lead {
+    font-size: 1.25rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Profile Cover Specific */
+  .profile-cover .profile-picture {
+    margin-top: 80px;
+  }
+  .profile-cover .profile-picture img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  /* Card Styles */
+  .card {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    max-width: 300px;       /* Limit card width to 300px */
+    margin: 20px auto;      /* Center the card horizontally */
+  }
+  
+  .card-img-top,
+  .img-fluid {
+    width: 100%;            /* Scale image to the card width */
+    height: auto;           /* Maintain aspect ratio */
+    object-fit: cover;      /* Crop the image to fill the area if needed */
+  }
+  
+  /* Footer */
+  footer {
+    font-size: 0.9rem;
+  }
+  
+  /* Badge Items */
+  .badge-item img {
+    width: 50px;    /* Desired width for badges */
+    height: 50px;   /* Desired height for badges */
+    object-fit: cover;
+  }
+  .ngo-card .card-img-top {
+    width: 100%;
+    height: 200px;      /* Adjust as desired */
+    object-fit: cover;  /* Ensures the image is cropped, not stretched */
+  }
+      

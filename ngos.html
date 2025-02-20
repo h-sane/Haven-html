@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Haven - NGOs</title>
+    <link rel="icon" href="favicon.ico" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Haven</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+          aria-controls="navMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="ngos.html">NGOs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="donation.html">Donate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="support.html">Support</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profile.html">Profile</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- NGO Profiles Listing -->
+    <div class="container mt-4">
+      <h2>NGO Profiles</h2>
+      <input type="text" id="searchInput" class="form-control mb-4" placeholder="Search for an NGO...">
+      <div class="row" id="ngoCards">
+        <!-- Sample NGO Card -->
+        <div class="col-md-4 ngo-card" data-name="Green Earth">
+          <div class="card mb-4">
+            <img src="https://images.pexels.com/photos/9543734/pexels-photo-9543734.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="card-img-top" alt="Green Earth">
+            <div class="card-body">
+              <h5 class="card-title">Green Earth</h5>
+              <p class="card-text">We work to reforest urban areas and promote sustainable living.</p>
+              <a href="ngo-profile.html?id=green-earth" class="btn btn-outline-primary">View Profile</a>
+            </div>
+          </div>
+        </div>
+        <!-- Sample NGO Card -->
+        <div class="col-md-4 ngo-card" data-name="Helping Hands">
+          <div class="card mb-4">
+            <img src="https://images.pexels.com/photos/6646917/pexels-photo-6646917.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="card-img-top" alt="Helping Hands">
+            <div class="card-body">
+              <h5 class="card-title">Helping Hands</h5>
+              <p class="card-text">We aim to provide food and shelter to those in need.</p>
+              <a href="ngo-profile.html?id=helping-hands" class="btn btn-outline-primary">View Profile</a>
+            </div>
+          </div>
+        </div>
+        <!-- More NGO cards can be added here -->
+      </div>
+    </div>
+
+    <script>
+      // Simple search functionality
+      document.getElementById('searchInput').addEventListener('input', function() {
+        var filter = this.value.toLowerCase();
+        var cards = document.querySelectorAll('.ngo-card');
+        cards.forEach(function(card) {
+          var name = card.getAttribute('data-name').toLowerCase();
+          card.style.display = name.indexOf(filter) > -1 ? '' : 'none';
+        });
+      });
+    </script>
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
